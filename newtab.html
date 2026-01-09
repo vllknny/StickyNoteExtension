@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sticky Notes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <aside id="sidebar">
+      <input id="search" placeholder="Search notes..." />
+
+      <ul id="note-list"></ul>
+
+      <button id="export">Export .md</button>
+      
+      <button id="connect-vault">🔗 Connect Obsidian Vault</button>
+      
+      <hr />
+
+      <div id="wallpaper-section">
+        <div class="section-title">Wallpapers</div>
+        <button id="slideshow-toggle">🎞 Slideshow</button>
+        <div id="wallpaper-grid"></div>
+      </div>
+    </aside>
+
+    <main id="note">
+      <textarea id="editor" placeholder="# Daily note..."></textarea>
+    </main>
+  </div>
+
+  <script src="markdown.min.js"></script>
+  <script src="newtab.js"></script>
+</body>
+</html>
